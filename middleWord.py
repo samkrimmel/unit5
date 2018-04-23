@@ -4,4 +4,7 @@
 
 words = input('Enter a bunch of words: ').split(' ')
 
-words[(len(words)/2)-1]
+if len(words)%2 == 0:
+    print(words[(len(words)//2)-1:(len(words)//2)])
+else:
+    print(words[(len(words)//2)])
