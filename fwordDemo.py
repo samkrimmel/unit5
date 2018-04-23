@@ -5,4 +5,5 @@
 words = input('Type in some words: ').split(' ') #split string into list when space is seen
 
 for item in words:
-    print(item)
+    if 'f' in item:
+        print(item)
