@@ -4,8 +4,8 @@
 
 words = input('Enter a list of words: ').split(' ')
 
+longest = ' '
 for word in words:
-    longest = ' '
     if len(word) >= len(longest):
         longest += word
 print(longest)
