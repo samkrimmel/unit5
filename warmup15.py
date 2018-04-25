@@ -9,7 +9,7 @@ numbers = []
 for i in range(1,20):
     numbers.append(randint(1,100))
 
-print(sum(numbers))
-print(min(numbers))
-print(max(numbers))
+print("teh sum of the list is: ",sum(numbers))
+print("teh min of the list is: ",min(numbers))
+print("the max of the list is: ",max(numbers))
     
