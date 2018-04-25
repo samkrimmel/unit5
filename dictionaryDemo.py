@@ -8,6 +8,6 @@ words.sort()
 
 num = int(input("What number word do you want??"))
 if num<=0 or num>= len(words)+1:
-    print("No no no, tsk tsk tsk.")
+    print("No no no, that's not gonna work.")
 else:
     print(words[num-1])
