@@ -5,6 +5,6 @@
 words = input("Type in a goood ol' list of words: ").split(' ')
 
 for thing in words:
-    if thing[0] in 'aeiou':
+    if thing[0] in 'AEIOUaeiou':
         print(thing)
 
