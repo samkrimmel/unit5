@@ -7,4 +7,4 @@ import datetime
 day = ['Mondey','Tueday','Wendsay','Thersday','Fridy']
 month = ['January','February','March','April','May','June','July','August','September','October','November','December']
 
-print("To
+print("Todays date is ", month[today.month-1] + day[today.day-1] + today.year)
