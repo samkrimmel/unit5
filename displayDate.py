@@ -9,4 +9,4 @@ today = datetime.date.today()
 day = ['Mondey','Tueday','Wendsay','Thersday','Fridy']
 month = ['January','February','March','April','May','June','July','August','September','October','November','December']
 
-print("Todays date is ", month[today.month], day[today.day], today.year)
+print("Todays date is ", day[today.weekday()] month[today.month], today.day, today.year)
