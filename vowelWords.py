@@ -4,5 +4,6 @@
 
 words = input("Type in a goood ol' list of words: ").split(' ')
 
-
+for thing in words:
+    print(thing)
 
