@@ -4,6 +4,8 @@
 
 import datetime
 
+today = datetime.date.today()
+
 day = ['Mondey','Tueday','Wendsay','Thersday','Fridy']
 month = ['January','February','March','April','May','June','July','August','September','October','November','December']
 
