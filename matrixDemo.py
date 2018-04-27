@@ -10,3 +10,7 @@ def printBoard(board):
 board = [['a','b','c'],['d','e','f'],['g','h','i']]
 
 printBoard(board)
+
+row = int(input('Enter a row: '))
+col = int(input('Enter a column: '))
+board[row-1][col-1] = 'X'
