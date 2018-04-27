@@ -5,7 +5,7 @@
 def printBoard(board):
     for r in range(0,3):
         for c in range(0,3):
-            print(board[r][c])
+            print(board[r][c],sep=' ')
 
 board = [['a','b','c'],['d','e','f'],['g','h','i']]
 
