@@ -14,6 +14,6 @@ L.sort()
 print('Min: ',min(L))
 print('Max: ',max(L))
 print('Mean: ',sum(L)/len(L))
-print('Median: ', L[len(L)//2]
+print('Median: ', L[(len(L)//2)]
 print('Mode: ')
 print(L)
