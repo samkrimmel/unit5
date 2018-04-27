@@ -11,9 +11,17 @@ while True:
         L.append(float(num))
 
 L.sort()
+print(L)
 print('Min: ',min(L))
 print('Max: ',max(L))
 print('Mean: ',sum(L)/len(L))
-print('Median: ', L[(len(L)//2)]
-print('Mode: ')
-print(L)
+print('Median: ', L[len(L)//2])
+
+mode = 0
+for i in range(0,len(L)):
+    if L.count(L[i]) > mode:
+        mode = L[i]
+
+
+print('Mode: ',mode)
+
