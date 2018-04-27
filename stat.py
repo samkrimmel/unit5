@@ -7,10 +7,13 @@ while True:
     num = input('Enter a list of numbers, enter q when finished: ')
     if num == 'q':
         break
-        print('Min: ',min(L))
-        print('Max: ',max(L))
-        print('Mean: ',sum(L)/len(L))
     else:
-        L.append(num)
+        L.append(float(num))
 
+L.sort()
+print('Min: ',min(L))
+print('Max: ',max(L))
+print('Mean: ',sum(L)/len(L))
+print('Median: ', L[len(L)//2]
+print('Mode: ')
 print(L)
