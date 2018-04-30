@@ -25,7 +25,7 @@ moden = 0
 mode = []
 for i in range(0,len(L)):
     if L.count(L[i]) >= moden:
-        mode = L[i]
+        moden = L[i]
         mode.append(L[i])
 
 
