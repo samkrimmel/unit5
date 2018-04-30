@@ -6,9 +6,9 @@ from ggame import *
 from random import randint
 
 
-ANTS = 200
-WIDTH = 800
-HEIGHT = 500
+ANTS = 10
+WIDTH = 900
+HEIGHT = 600
 
 
 if __name__ == '__main__':
