@@ -13,10 +13,13 @@ HEIGHT = 600
 
 if __name__ == '__main__':
     
+    data = {}
+    data['antList'] = []
+    
     red = Color(0xFF0000,1)
     ant = CircleAsset(5,LineStyle(1,red),red)
     
     for i in range(ANTS):
-        Sprite(ant,(randint(1,WIDTH),randint(1,HEIGHT)))
+        data['antList'].append(Sprite(ant,(randint(1,WIDTH),randint(1,HEIGHT))))
     
     App().run()
