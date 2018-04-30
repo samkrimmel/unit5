@@ -9,7 +9,7 @@ ANTS = 10
 if __name__ == '__main__':
     
     red = Color(0xFF0000,1)
-    ant = CircleAsset(20,LineStyle(1,red),red)
+    ant = CircleAsset(5,LineStyle(1,red),red)
     
     Sprite(ant)
     
