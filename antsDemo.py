@@ -8,7 +8,7 @@ from random import randint
 
 ANTS = 10
 WIDTH = 800
-HEIGHT = 800
+HEIGHT = 500
 
 
 if __name__ == '__main__':
@@ -18,7 +18,5 @@ if __name__ == '__main__':
     
     for i in range(ANTS):
         Sprite(ant,(randint(1,WIDTH),randint(1,HEIGHT)))
-    
-    Sprite(ant)
     
     App().run()
