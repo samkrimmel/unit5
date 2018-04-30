@@ -24,7 +24,7 @@ else:
 mode = 0
 for i in range(0,len(L)):
     if L.count(L[i]) > mode:
-        mode.append(L[i])
+        mode = L[i]
 
 
 print('Mode: ',mode)
