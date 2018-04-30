@@ -21,9 +21,11 @@ if len(L)%2 == 0:
 else:
     print('Median: ', L[len(L)//2])
 
+moden = 0
 mode = []
 for i in range(0,len(L)):
-    if L.count(L[i]) >= mode:
+    if L.count(L[i]) >= moden:
+        mode = L[i]
         mode.append(L[i])
 
 
