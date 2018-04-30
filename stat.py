@@ -15,7 +15,11 @@ print(L)
 print('Min: ',min(L))
 print('Max: ',max(L))
 print('Mean: ',sum(L)/len(L))
-print('Median: ', L[len(L)//2])
+
+if len(L)%2 == 0:
+    print('Median: ', (L[len(L)//2] + L[(len(L)//2)-1])/2)
+else:
+    print('Median: ', L[len(L)//2])
 
 mode = 0
 for i in range(0,len(L)):
