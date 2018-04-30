@@ -6,4 +6,4 @@ name = input('Vhat iss yoour naaame??').split(' ')
 quest = input('Vhat... is your QuEsT??')
 color = input('WHat.. is your favourite colour??')
 
-print('Your initals are', name[0][0], name[1][0]
+print('Your initals are', name[0][0], name[1][0])
