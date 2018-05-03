@@ -12,8 +12,10 @@ def mySort(L,i,j):
         L[i], L[j] = L[j], L[i]
     if (j-i+1) > 2:
         t = (j-1+1)/3
-        mySort
-    return A
+        mySort(L,i,j-t)
+        mySort(L,i+t,j)
+        mySort(L,i,j-t)
+    return L
 
 if __name__ == '__main__':
 
