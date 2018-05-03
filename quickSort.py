@@ -35,7 +35,7 @@ if __name__ == '__main__':
     
     #time how long your sort takes
     t1 = time()
-    numbers = mySort(numbers,numbers.min(),numbers.max())
+    numbers = mySort(numbers,min(numbers),max(numbers))
     t2 = time()
     
     #print whether the sort worked or not
