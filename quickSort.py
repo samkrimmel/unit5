@@ -5,26 +5,15 @@
 from random import randint
 from time import time
 
-N = 10 #how many numbers will be sorted
+N = 3 #how many numbers will be sorted
 
-def mySort(A,lo,hi):
-    if lo < hi:
-        p = partition(A,lo,hi)
-        mySort(A,lo,p-1)
-        mySort(A,p+1,hi)
-    
+def mySort(L,i,j):
+    if L[i] > L[j]:
+        L[i], L[j] = L[j], L[i]
+    if (j-i+1) > 2:
+        t = (j-1+1)/3
+        mySort
     return A
-    
-def partition(A,lo,hi):
-    pivot = A[hi-1]
-    i = lo-1
-    for j in range(lo,hi-1):
-        if A[j-1] < pivot:
-            i+=1
-            A[i-1], A[j-1] = A[j-1], A[i-1]
-    A[i], A[hi-1] = A[hi-1], A[i]
-    
-    return i+1
 
 if __name__ == '__main__':
 
@@ -37,7 +26,7 @@ if __name__ == '__main__':
     
     #time how long your sort takes
     t1 = time()
-    numbers = mySort(numbers,min(numbers),max(numbers))
+    numbers = mySort(numbers,0,len(numbers)-1)
     t2 = time()
     
     #print whether the sort worked or not
