@@ -14,13 +14,13 @@ def mySort(A,lo,hi):
         mySort(A,p+1,hi)
 
 def partition(A,lo,hi):
-    pivot = A[hi]
+    pivot = A[hi-1]
     i = lo-1
     for j in range(lo,hi-1):
-        if A[j] < pivot:
+        if A[j-1] < pivot:
             i+= 1
-            A[i], A[j] = A[j], A[i]
-    A[i+1], A[hi] = A[hi], A[i+1]
+            A[i-1], A[j-1] = A[j-1], A[i-1]
+    A[i], A[hi-1] = A[hi-1], A[i]
     
     return i+1
 
