@@ -23,7 +23,7 @@ def mySort(A):
                 A[i], A[i+1] = A[i+1], A[i] #swap in python
                 swapped = True
     return A
-    
+
 if __name__ == '__main__':
 
     #make a list of N random numbers between 1 and N
