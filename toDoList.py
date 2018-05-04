@@ -6,8 +6,17 @@ list = []
 
 while True:
     print("Valid Commands: add, delete, print, quit")
-    inp = input()
+    inp = input().split(' ')
     
-    if inp == "quit":
+    if inp[0] == "add":
+        list.append(inp[1:])
+    elif inp[0] == "delete":
+        list.remove(inp[1:])
+    elif inp[0] == "print":
+        for item in list:
+            print(item)
+    elif inp == "quit":
         break
+    else:
+        print("No, no, no, pick a valid command")
     
