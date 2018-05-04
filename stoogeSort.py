@@ -28,7 +28,7 @@ if __name__ == '__main__':
     
     #time how long your sort takes
     t1 = time()
-    j = len(L) -1
+    j = len(numbers) -1
     i = 0
     numbers = mySort(numbers,i,j)
     t2 = time()
