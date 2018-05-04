@@ -1,6 +1,6 @@
 #Sam Krimmel
 #5/2/18
-#cocktailSortDemo.py - implementing cocktail sort
+#stoogeSort.py - implementing cocktail sort
 
 from random import randint
 from time import time
