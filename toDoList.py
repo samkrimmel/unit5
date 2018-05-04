@@ -15,7 +15,7 @@ while True:
     elif inp[0] == "print":
         for item in list:
             print(item)
-    elif inp == "quit":
+    elif inp[0] == "quit":
         break
     else:
         print("No, no, no, pick a valid command")
