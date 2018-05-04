@@ -5,7 +5,7 @@
 from random import randint
 from time import time
 
-N = 1000 #how many numbers will be sorted
+N = 200 #how many numbers will be sorted
 
 def mySort(L,i,j):
     if L[i] > L[j]:
