@@ -11,10 +11,11 @@ def mySort(L,i,j):
     if L[i] > L[j]:
         L[i], L[j] = L[j], L[i]
     if (j-i+1) > 2:
-        t = (j-1+1)/3
+        t = (j-i+1)//3
         mySort(L,i,j-t)
         mySort(L,i+t,j)
         mySort(L,i,j-t)
+    print(L)
     return L
 
 if __name__ == '__main__':
@@ -28,9 +29,7 @@ if __name__ == '__main__':
     
     #time how long your sort takes
     t1 = time()
-    j = len(numbers) -1
-    i = 0
-    numbers = mySort(numbers,i,j)
+    numbers = mySort(numbers,0,len(numbers)-1)
     t2 = time()
     
     #print whether the sort worked or not
