@@ -17,7 +17,7 @@ def smallest(numbers):
             smallest = item
     return smallest
     
-print(penultimate([3,4,4,120,20,6]))
-print(plusEquals([1,21,31,4,1,1,0],15))
-print(smallest([1,2,3,4,9,6,0,-5]))
+print(penultimate([3,4,5,6,7]))
+print(plusEquals([1,2,3,4],10))
+print(smallest([1,2,3,4]))
 
