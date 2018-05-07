@@ -6,8 +6,8 @@ def penultimate(L):
     return L[len(L)-2]
 
 def plusEquals(numbers,num):
-    for item in numbers:
-        item += num
+    for i in range(0,len(numbers)-1):
+        numbers[i] = numbers[i]+num
     return numbers
     
 def smallest(numbers):
@@ -19,7 +19,7 @@ def smallest(numbers):
 
 def decimalRange(first,last,step):
     L = []
-    for i in range((last-first)/step):
+    for i in range((last-first)/float(step)):
         L.append(first+(step*i))
     return L
 print(penultimate([3,4,5,6,7]))
